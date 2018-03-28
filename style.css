@@ -1,0 +1,243 @@
+/* 初始化 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1em;
+}
+
+html {
+    background: gray;
+    height: 100%;
+}
+
+/* 主體 */
+body {
+    width: 1260px;
+    height: 940px;
+    background: #EDF2C5;
+    margin: 0 auto;
+}
+
+/* 標題區域 */
+header {
+    padding-top: 53px;
+    margin: 0 160px 8px 160px;
+}
+
+header h1 {
+    display: block;
+    width: 271px;
+    height: 42px;
+    color: #778A50;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 262.5%;
+    float: left;
+}
+
+header .iconBar {
+    display: block;
+    float: right;
+}
+
+header .iconBar::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+header span {
+    display: block;
+    float: left;
+}
+
+header span.ic_header_facebook {
+    height: 25px;
+    width: 25px;
+    background-image: url("./img/btn_facebook.png");
+    background-position: center center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header span.ic_header_instagram {
+    height: 25px;
+    width: 25px;
+    background-image: url("./img/btn_instagram.png");
+    background-position: center center;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+header span.divider {
+    display: inline-block;
+    width: 0px;
+    height: 25px;
+    border: 1px solid #778A50;
+    margin-right: 10px;
+}
+
+header button {
+    height: 25px;
+    background-color: transparent;
+    font-family: 'Arial BoldMT', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    line-height: 25px;
+    color: #778A50;
+    border: 1px solid #778A50;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+    float: left;
+}
+
+header button:hover {
+    color: #EDF2C5;
+    background-color: #778A50;
+}
+
+header button.btn_header_login {
+    width: 60px;
+    margin-right: 10px;
+}
+
+header button.btn_header_join {
+    width: 50px;
+}
+
+header::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/* 導覽列 */
+nav {
+    width: 940px;
+    height: 44px;
+    background: #778A50;
+    border-radius: 5px;
+    margin: 0 160px;
+}
+
+nav a {
+    display: inline-block;
+    font-family: 'Arial Black';
+    font-size: 16px;
+    text-decoration: none;
+    color: #EDF2C5;
+    padding: 14px 30px;
+}
+
+/* 內容主體 */
+article {
+    margin: 0 160px 35px 160px;
+}
+
+article img.img_main {
+    width: 940px;
+    height: 448px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+article section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+article section {
+    margin-bottom: 35px;
+}
+
+/* 內容主體 - 蔬菜圖片 */
+article section .vegatables-pictures {
+    float: left;
+}
+
+article section .vegatables-pictures::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.vegatables-pictures .vegatables-pictures-bar {
+    width: 445px;
+    height: 45px;
+    background-color: #778A50;
+    color: #EDF2C5;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 15px 0 15px 30px;
+    margin: 0 0 15px 0;
+}
+
+.vegatables-pictures img {
+    width: 140px;
+    height: 140px;
+    margin-right: 12px;
+    float: left;
+}
+
+.vegatables-pictures img:last-child {
+    margin-right: 0;
+}
+
+/* 內容主體 - 聯絡資訊 */
+article section .contact-info {
+    float: right;
+}
+
+.contact-info .contact-info-bar {
+    width: 445px;
+    height: 45px;
+    background-color: #778A50;
+    color: #EDF2C5;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 17px 0 16px 30px;
+    margin: 0 0 15px 0;
+}
+
+.contact-info .contact-info-content {
+    width: 445px;
+    height: 140px;
+    background-color: #F7FBDA;
+    font-family: 'ArialMT Regular', sans-serif;
+    font-size: 12px;
+    color: #7D7D7D;
+    padding: 16px 15px;
+}
+
+.contact-info .contact-info-content p.contact {
+    line-height: 1.33;
+}
+
+.contact-info .contact-info-content .divider-line {
+    height: 1px;
+    width: 414px;
+    border-top: 1px solid #7D7D7D;
+    margin: 16px 0;
+}
+
+.contact-info .contact-info-content .personal-info {
+    line-height: 1.83;
+}
+
+/* 頁尾 */
+footer {
+    width: 1264px;
+    height: 60px;
+    background-color: #778A50;
+    color: #EDF2C5;
+    font-family: 'ArialMT', sans-serif;
+    font-size: 12px;
+    padding: 24px 479px 25px 479px;
+}
+
+/* 除錯輔助 */
+.debug-bd { border: 1px dotted black; }
